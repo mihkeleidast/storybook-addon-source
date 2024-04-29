@@ -1,13 +1,16 @@
 {
   "name": "@mihkeleidast/storybook-addon-source",
   "version": "0.0.0",
-  "description": "Displays the source example of the current story in a panel",
+  "description": "Displays the source example of the current story",
   "keywords": [
-    "source", "jsx", "code", "storybook-addons"
+    "source",
+    "jsx",
+    "code",
+    "storybook-addons"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mihkeleidast/storybook-addon-source-panel"
+    "url": "https://github.com/mihkeleidast/storybook-addon-source"
   },
   "type": "module",
   "license": "MIT",
@@ -23,7 +26,6 @@
       "import": "./dist/preview.js",
       "require": "./dist/preview.cjs"
     },
-    "./preset": "./dist/preset.cjs",
     "./manager": "./dist/manager.js",
     "./package.json": "./package.json"
   },
@@ -72,6 +74,7 @@
     "prompts": "^2.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-element-to-jsx-string": "^15.0.0",
     "storybook": "8.0.0",
     "tsup": "^8.0.2",
     "typescript": "^5.4.2",
@@ -90,13 +93,10 @@
     ],
     "previewEntries": [
       "src/preview.ts"
-    ],
-    "nodeEntries": [
-      "src/preset.ts"
     ]
   },
   "storybook": {
-    "displayName": "Source Panel",
+    "displayName": "Source",
     "supportedFrameworks": [
       "react"
     ],
