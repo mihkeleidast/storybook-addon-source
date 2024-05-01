@@ -1,6 +1,6 @@
 {
   "name": "@mihkeleidast/storybook-addon-source",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Displays the source example of the current story",
   "keywords": [
     "source",
