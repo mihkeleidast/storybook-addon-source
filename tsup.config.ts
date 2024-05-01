@@ -55,12 +55,12 @@ export default defineConfig(async (options) => {
       ...commonConfig,
       entry: exportEntries,
       dts: {
-        resolve: true,
+        resolve: false,
       },
       format: ["esm", "cjs"],
       target: [...BROWSER_TARGET, ...NODE_TARGET],
       platform: "neutral",
-      external: [...globalManagerPackages, ...globalPreviewPackages],
+      external: [...globalManagerPackages, ...globalPreviewPackages].filter((p) => p !== 'react'),
     });
   }
 

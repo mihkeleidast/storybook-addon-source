@@ -1,6 +1,11 @@
-import type { Preview } from "@storybook/react";
+import { Preview } from "@storybook/react";
+
+import { withJsx } from '../dist/index.js'
 
 const preview: Preview = {
+  decorators: [
+    withJsx,
+  ],
   parameters: {
     backgrounds: {
       default: "light",

@@ -21,11 +21,6 @@
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
-    "./preview": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/preview.js",
-      "require": "./dist/preview.cjs"
-    },
     "./manager": "./dist/manager.js",
     "./package.json": "./package.json"
   },
@@ -90,9 +85,6 @@
     ],
     "managerEntries": [
       "src/manager.ts"
-    ],
-    "previewEntries": [
-      "src/preview.ts"
     ]
   },
   "storybook": {
